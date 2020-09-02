@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/20cfbc7c59.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <title>Final Fantasy XV</title>
+  </head>
+
+  <body style="background-image: url('img/space.jpg')">
+    <header>
+      <div class="d-flex justify-content-end">
+        <p>Follow Final Fantasy XV:</p>
+        <a href="https://www.facebook.com/ffxv/"
+          ><i class="fa fa-facebook"></i
+        ></a>
+        <a href="https://twitter.com/ffxven?lang=es"
+          ><i class="fa fa-twitter"></i
+        ></a>
+        <a href="https://finalfantasyxv.square-enix-games.com/es"
+          ><i class="fa fa-dribbble"></i
+        ></a>
+      </div>
+    </header>
+
+    <header class="nav-header" role="baner">
+      <ul class="nav-menu">
+        <li><a href="home.html">Home</a></li>
+        <li>
+          <a href="game.html">Game</a>
+          <ul>
+            <li><a href="game.html">Historia</a></li>
+            <li><a href="personajes.html">Personajes</a></li>
+            <li><a href="bestiario.html">Bestiario</a></li>
+            <li><a href="jugabilidad.html">Jugabilidad</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </header>
+    <!-- Default form login -->
+    <form class="text-center border border-light p-5" method="POST" action="#!">
+      <p class="h4 mb-4">Contacto</p>
+
+      <label for="nombre">Nombre</label>
+      <input
+        type="text"
+        id="nombre"
+        class="form-control mb-4"
+        placeholder="Nombre"
+        required
+      />
+      <!-- Email -->
+      <label for="correo">Correo</label>
+      <input
+        type="email"
+        id="correo"
+        class="form-control mb-4"
+        placeholder="E-mail"
+        required
+      />
+
+      <!-- Mensaje -->
+      <label for="mensaje">Mensaje</label>
+      <textarea
+        type="password"
+        id="mensaje"
+        class="form-control mb-4"
+        placeholder="Mensaje"
+        cols="30"
+        role="10"
+        required
+      ></textarea>
+
+      <!-- Enviar boton-->
+      <button class="btn btn-info btn-block my-4" type="submit">Enviar</button>
+
+      <!-- Social login -->
+      <p>O contáctanos a través de nuestras redes sociales</p>
+
+      <a href="#" class="mx-2" role="button"
+        ><i class="fab fa-facebook-f light-blue-text"></i
+      ></a>
+      <a href="#" class="mx-2" role="button"
+        ><i class="fab fa-twitter light-blue-text"></i
+      ></a>
+      <a href="#" class="mx-2" role="button"
+        ><i class="fab fa-linkedin-in light-blue-text"></i
+      ></a>
+    </form>
+  </body>
+
+  <footer class="text-center">
+    <p><b>Jesica © 2020. All rights reserved</b></p>
+  </footer>
+</html>
