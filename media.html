@@ -14,6 +14,31 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="css/estilos.css" />
+
+    <script>
+      var which = 0;
+
+      var cambiara = new Array(
+        "img/2.jpeg",
+        "img/1.jpeg",
+        "img/3.jpeg",
+        "img/4.jpeg",
+        "img/5.png"
+      );
+
+      function next() {
+        if (which < 5) which++;
+
+        document.getElementById("imagen").src = cambiara[which];
+      }
+
+      function prev() {
+        if (which > 0) which--;
+
+        document.getElementById("imagen").src = cambiara[which];
+      }
+    </script>
+
     <title>Final Fantasy XV</title>
   </head>
 
@@ -52,6 +77,26 @@
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
     </header>
+
+    <h2>Oficial Trailer</h2>
+    <iframe
+      src="https://www.youtube.com/embed/IiI7SMQA59Q"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+
+    <h2>Funny photos</h2>
+    <img src="img/2.jpeg" alt="" />
+
+    <img id="imagen" src="" alt="" />
+
+    <br />
+    <div class="boton">
+      <button onclick="prev()"><<</button>
+
+      <button onclick="next()">>></button>
+    </div>
   </body>
   <footer>
     <footer class="text-center">

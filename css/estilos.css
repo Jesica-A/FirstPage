@@ -101,6 +101,10 @@ img {
   justify-content: center center;
 }
 
+iframe {
+  width: 100%;
+  height: 540px;
+}
 .text-h {
   display: flex;
   position: absolute;
@@ -132,4 +136,9 @@ img {
 
 .pistas {
   margin-top: 5%;
+}
+
+.boton {
+  display: flex;
+  position: absolute;
 }
