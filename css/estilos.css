@@ -120,3 +120,16 @@ img {
   width: 96%;
   background-color: rgba(0, 0, 0, 0.599);
 }
+
+.text-a {
+  margin: 4% 75%;
+  padding: 4%;
+}
+
+.icon {
+  font-size: 80px;
+}
+
+.pistas {
+  margin-top: 5%;
+}

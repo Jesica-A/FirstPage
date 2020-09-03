@@ -14,6 +14,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="css/estilos.css" />
+    <script src="js/app.js"></script>
     <title>Final Fantasy XV</title>
   </head>
 
@@ -35,7 +36,7 @@
       </div>
     </header>
 
-    <header>
+    <header class="nav-header" role="baner">
       <ul class="nav-menu">
         <li><a href="home.html">Home</a></li>
         <li>
@@ -53,16 +54,38 @@
       </ul>
     </header>
 
-    <section>
-      <h2>Contenido de la página</h2>
-      <ol>
-        <li><a href="#br">Bestiario</a></li>
-        <ul>
-          <li><a href="#pr">Sidéreos</a></li>
-          <li><a href="#se">Criaturas</a></li>
-        </ul>
-      </ol>
-    </section>
+    <h3 style="text-align: center"><b>¡IMPORTANTE!</b></h3>
+    <h4>¡Solo tienes 4 intentos o se termina el juego!</h4>
+    <h3 style="text-align: center">¡Empecemos!</h3>
+    <img src="img/preg.jpg" alt="" />
+    <div class="row"></div>
+    <div class="col-11">
+      <h3 style="margin-left: 40%"><b>¿Quién es el actual Oráculo?</b></h3>
+    </div>
+    <div class="text-h text-a">
+      <div class="row">
+        <div class="p-2" id="intentosMostrar"></div>
+      </div>
+      <div class="row">
+        <div>
+          <input
+            type="text"
+            id="respuestaObtenida"
+            class="border border-primary"
+            placeholder="Respuesta"
+          />
+          <button
+            style="margin-top: 5%"
+            type="button"
+            class="btn btn-primary"
+            onclick="contadorDeIntentos()"
+            id="botonIntento"
+          >
+            Enviar Respuesta
+          </button>
+        </div>
+        <div id="pistasDar" class="pistas"></div>
+      </div>
+    </div>
   </body>
-  <footer class="text-center"><b>Jesica © 2020. All rights reserved</b></footer>
 </html>
