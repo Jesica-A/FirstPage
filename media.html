@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--BootstrapCDN-->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -10,39 +11,33 @@
       crossorigin="anonymous"
     />
     <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <!--Fin BootstrapCDN-->
+    <script
       src="https://kit.fontawesome.com/20cfbc7c59.js"
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="css/estilos.css" />
-
-    <script>
-      var which = 0;
-
-      var cambiara = new Array(
-        "img/2.jpeg",
-        "img/1.jpeg",
-        "img/3.jpeg",
-        "img/4.jpeg",
-        "img/5.png"
-      );
-
-      function next() {
-        if (which < 5) which++;
-
-        document.getElementById("imagen").src = cambiara[which];
-      }
-
-      function prev() {
-        if (which > 0) which--;
-
-        document.getElementById("imagen").src = cambiara[which];
-      }
-    </script>
+    <script src="js/boton.js"></script>
 
     <title>Final Fantasy XV</title>
   </head>
 
   <body style="background-image: url('img/space.jpg')">
+    <!--Barra Follow Final fantasy XV-->
     <header>
       <div class="d-flex justify-content-end">
         <p>Follow Final Fantasy XV:</p>
@@ -60,6 +55,7 @@
       </div>
     </header>
 
+    <!--Barra navegación en página-->
     <header class="nav-header" role="baner">
       <ul class="nav-menu">
         <li><a href="home.html">Home</a></li>
@@ -68,16 +64,16 @@
           <ul>
             <li><a href="game.html">Historia</a></li>
             <li><a href="personajes.html">Personajes</a></li>
-            <li><a href="bestiario.html">Bestiario</a></li>
-            <li><a href="jugabilidad.html">Jugabilidad</a></li>
+            <li><a href="sidereos.html">Sidéreos</a></li>
           </ul>
         </li>
         <li><a href="about.html">About</a></li>
         <li><a href="media.html">Media</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="contacto.html">Contact</a></li>
       </ul>
     </header>
 
+    <!--Contenido de página-->
     <h2>Oficial Trailer</h2>
     <iframe
       src="https://www.youtube.com/embed/IiI7SMQA59Q"
@@ -86,21 +82,19 @@
       allowfullscreen
     ></iframe>
 
-    <h2>Funny photos</h2>
-    <img src="img/2.jpeg" alt="" />
-
-    <img id="imagen" src="" alt="" />
-
-    <br />
+    <h2>Mejores fotos</h2>
+    <img src="img/6.jpg" alt="Galería de imágenes" />
+    <img id="imagen" />
+    <!--Boton JS-->
     <div class="boton">
-      <button onclick="prev()"><<</button>
-
-      <button onclick="next()">>></button>
+      <button class="btn btn-info btn-block my-1" onclick="prev()"><<</button>
+      <button class="btn btn-info btn-block my-1" onclick="next()">>></button>
     </div>
   </body>
+
   <footer>
-    <footer class="text-center">
-      <p><b>Jesica © 2020. All rights reserved</b></p>
+    <footer class="text-center" style="margin-top: 60%">
+      <p><b>Jesica A © 2020. All rights reserved</b></p>
     </footer>
   </footer>
 </html>
