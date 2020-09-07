@@ -7,6 +7,7 @@ function contadorRestantes() {
   intentosRestantes--;
   document.getElementById("intentos");
 }
+
 function contadorIntentos() {
   contadorRestantes();
   contadorR++;
