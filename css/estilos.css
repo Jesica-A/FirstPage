@@ -110,7 +110,7 @@ p {
   justify-content: center center;
 }
 
-img {
+.imgg {
   width: 100%;
   height: auto;
   display: flex;
@@ -164,4 +164,34 @@ iframe {
 .boton {
   display: flex;
   position: absolute;
+}
+
+.crop {
+  width: 260px;
+  overflow: hidden;
+}
+
+.crop img {
+  width: 400px;
+  margin: 0 0 0 -70px;
+}
+
+.bgimg-1 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-1 {
+  background-image: url(../img/ffxv.jpg);
+  min-height: 100%;
+}
+
+/* Cambia tamaño foto de home para celular */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1 {
+    background-attachment: scroll;
+    min-height: 600px;
+  }
 }
