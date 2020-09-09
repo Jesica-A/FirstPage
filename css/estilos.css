@@ -123,15 +123,19 @@ iframe {
   height: 540px;
 }
 
+section {
+  font-size: 1.5vw;
+}
+
 .text-h {
   display: flex;
   position: absolute;
   text-align: center;
   font-size: 1.8vw;
-  margin: 15% 7%;
-  width: 85%;
+  margin: 10%;
+  width: 80%;
   padding: 2%;
-  background-color: rgba(0, 0, 0, 0.272);
+  background-color: rgba(0, 0, 0, 0.493);
 }
 
 .text-g {
@@ -166,6 +170,7 @@ iframe {
   position: absolute;
 }
 
+/* Cambia tamaño foto de home para celular */
 .crop {
   width: 260px;
   overflow: hidden;
@@ -188,25 +193,25 @@ iframe {
   min-height: 100%;
 }
 
-/* Cambia tamaño foto de home para celular */
 @media only screen and (max-device-width: 1600px) {
   .bgimg-1 {
     background-attachment: scroll;
-    min-height: 600px;
+    min-height: 800px;
   }
 }
-
+/* Cambia tamaño texto para celular */
 @media only screen and (max-device-width: 800px) {
   div.text-h {
     font-size: 2.5vw;
     margin: 2%;
     width: 96%;
-    color: rgba(255, 255, 255, 0.673);
+    color: rgba(255, 255, 255, 0.857);
   }
   div.text-g,
   h4,
   table,
-  th {
+  th,
+  section {
     font-size: 3vw;
   }
   h2 {

@@ -26,6 +26,7 @@
       crossorigin="anonymous"
     ></script>
     <!--Fin BootstrapCDN-->
+    <script src="js/code.js"></script>
     <script
       src="https://kit.fontawesome.com/20cfbc7c59.js"
       crossorigin="anonymous"
@@ -104,7 +105,7 @@
       <!--Adivinanza-->
       <div class="col">
         <section class="mt-5" style="padding: 20%">
-          <p style="font-size: 20px">
+          <p>
             <b>
               ¿Estás listo para un mini desafío? <br />
               ¡Dale click al icono de abajo y comencemos!
@@ -120,7 +121,8 @@
     <h3 id="noc">Noctis Lucis Caelum</h3>
     <img class="imgg" src="img/Noctis.jpg" alt="" />
     <div class="text-h">
-      <p>
+      <p>(<a href="#" class="alternar-respuesta">Info</a>)</p>
+      <p class="respuesta" style="display: none">
         Noctis es el hijo del rey Regis y príncipe heredero del trono de Lucis,
         el reino con control sobre el Cristal.Puede ejercer el poder de los
         reyes de Lucis.<br />Viaja junto a sus amigos cercanos: Gladiolus
@@ -140,7 +142,8 @@
     <h3 style="margin-top: 60%" id="prom">Prompto Argentum</h3>
     <img class="imgg" src="img/prompto.jpg" alt="" />
     <div class="text-h">
-      <p>
+      <p>(<a href="#" class="alternar-respuesta">Info</a>)</p>
+      <p class="respuesta" style="display: none">
         Prompto es el mejor amigo de Noctis de la escuela secundaria. Es quién
         toma fotos de su viaje por carretera. Prompto es el más juguetón de los
         cuatro, es optimista y se enamora fácilmente de las mujeres. Sufre de un
@@ -155,7 +158,8 @@
     <h3 style="margin-top: 60%" id="gla">Gladiolus Amicitia</h3>
     <img class="imgg" src="img/gladio.jpg" alt="" />
     <div class="text-h">
-      <p>
+      <p>(<a href="#" class="alternar-respuesta">Info</a>)</p>
+      <p class="respuesta" style="display: none">
         Gladiolus es un amigo de la infancia de Noctis e Ignis, es el hijo mayor
         de Clarus Amicitia y hermano mayor de Iris Amicitia. Como miembro de la
         Guardia de la Corona, Gladiolus actúa como el escudo de Noctis,se
@@ -172,7 +176,8 @@
     <h3 style="margin-top: 60%" id="ign">Ignis Scientia</h3>
     <img class="imgg" src="img/ignis.jpg" alt="" />
     <div class="text-h">
-      <p>
+      <p>(<a href="#" class="alternar-respuesta">Info</a>)</p>
+      <p class="respuesta" style="display: none">
         Ignis es un amigo cercano de la infancia de Noctis y parte de su séquito
         real junto a Gladiolus y Prompto. Actúa como consejero de la familia
         real y sirviente de la Guardia de la Corona. Ignis tiene una
@@ -188,7 +193,8 @@
     <h3 style="margin-top: 60%" id="luna">Lunafreya Nox Fleuret</h3>
     <img class="imgg" src="img/lunafreya.jpg" alt="" />
     <div class="text-h">
-      <p>
+      <p>(<a href="#" class="alternar-respuesta">Info</a>)</p>
+      <p class="respuesta" style="display: none">
         Lunafreya Nox Fleuret es una ex princesa de Tenebrae, cautiva del
         Imperio Niflheim. Es la hermana menor de Ravus Nox Fleuret, prometida
         del príncipe Noctis e hija de la reina de Tenebrae, Sylva Via
@@ -208,7 +214,8 @@
     <h3 style="margin-top: 60%" id="reg">Regis Lucis Caelum</h3>
     <img class="imgg" src="img/regis.jpg" alt="" />
     <div class="text-h">
-      <p>
+      <p>(<a href="#" class="alternar-respuesta">Info</a>)</p>
+      <p class="respuesta" style="display: none">
         Como rey de Lucis, se le conoce como Rey Regis o Regis Lucis Caelum
         CXIII.<br />
         Es el 113º monarca en la línea de Lucis y padre de Noctis.<br />Regis,
@@ -227,7 +234,8 @@
     <h3 style="margin-top: 60%" id="ard">Ardyn Izunia</h3>
     <img class="imgg" src="img/ardyn.jpg" alt="" />
     <div class="text-h">
-      <p>
+      <p>(<a href="#" class="alternar-respuesta">Info</a>)</p>
+      <p class="respuesta" style="display: none">
         El canciller Ardyn Izunia, también conocido como Ardyn Lucis Caelum<br />
         Él se encarga de las operaciones políticas del Imperio Niflheim para el
         emperador Aldercapt, y es responsable de la expansión del virus y de la
@@ -245,7 +253,8 @@
     <h3 id="rav">Ravus Nox Fleuret</h3>
     <img class="imgg" src="img/ravus.jpg" alt="" />
     <div class="text-h">
-      <p>
+      <p>(<a href="#" class="alternar-respuesta">Info</a>)</p>
+      <p class="respuesta" style="display: none">
         Ravus es el hijo mayor de la Casa Fleuret, Sangre del Oráculo y hermano
         mayor de Lady Lunafreya.<br />Su madre fue quemada viva en los incendios
         que quemaron a Tenebrae hace doce años. Culpando al "cobarde" rey Regis
@@ -264,7 +273,8 @@
     <h3 style="margin-top: 60%" id="cor">Cor Leonis</h3>
     <img class="imgg" src="img/cor.jpg" alt="" />
     <div class="text-h">
-      <p>
+      <p>(<a href="#" class="alternar-respuesta">Info</a>)</p>
+      <p class="respuesta" style="display: none">
         Cor es el Jefe de la Guardia de la Corona, la guardia real de Lucis que
         protege la Ciudadela e Insomnia, y por lo tanto a la familia real. Es
         considerado uno de los tres guerreros más poderosos del Reino de
@@ -282,7 +292,8 @@
     <h3 style="margin-top: 60%" id="ara">Aranea Highwind</h3>
     <img class="imgg" src="img/aranea.jpg" alt="" />
     <div class="text-h">
-      <p>
+      <p>(<a href="#" class="alternar-respuesta">Info</a>)</p>
+      <p class="respuesta" style="display: none">
         Ella es una mercenaria que se desempeña como comodoro de la 87.a Unidad
         Aerotransportada del Tercer Cuerpo de Ejército del Imperio de Niflheim.
         <br />Aranea es un ex mercenario de espíritu libre y duro, cuya lealtad
@@ -298,7 +309,8 @@
     <h3 style="margin-top: 60%" id="iris">Iris Amicitia</h3>
     <img class="imgg" src="img/iris.jpg" alt="" />
     <div class="text-h">
-      <p>
+      <p>(<a href="#" class="alternar-respuesta">Info</a>)</p>
+      <p class="respuesta" style="display: none">
         Iris es hija de House Amicitia y hermana menor de Gladiolus por ocho
         años.<br />
         La cercanía de su familia con la corona la puso en contacto con Noctis a
