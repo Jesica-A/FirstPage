@@ -127,11 +127,11 @@ iframe {
   display: flex;
   position: absolute;
   text-align: center;
-  font-size: 2vw;
+  font-size: 1.8vw;
   margin: 15% 7%;
   width: 85%;
   padding: 2%;
-  background-color: rgba(0, 0, 0, 0.381);
+  background-color: rgba(0, 0, 0, 0.272);
 }
 
 .text-g {
@@ -193,5 +193,26 @@ iframe {
   .bgimg-1 {
     background-attachment: scroll;
     min-height: 600px;
+  }
+}
+
+@media only screen and (max-device-width: 600px) {
+  div.text-h {
+    font-size: 2.6vw;
+    margin: 2%;
+    width: 96%;
+    color: rgba(255, 255, 255, 0.673);
+  }
+  div.text-g,
+  h4,
+  table,
+  th {
+    font-size: 3vw;
+  }
+  h2 {
+    font-size: 5vw;
+  }
+  h3 {
+    font-size: 4vw;
   }
 }
