@@ -196,9 +196,9 @@ iframe {
   }
 }
 
-@media only screen and (max-device-width: 600px) {
+@media only screen and (max-device-width: 800px) {
   div.text-h {
-    font-size: 2.6vw;
+    font-size: 2.5vw;
     margin: 2%;
     width: 96%;
     color: rgba(255, 255, 255, 0.673);
