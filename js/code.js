@@ -42,9 +42,10 @@ function darPistas() {
   }
 }
 
+/* Mostrar texto arriba de imagen*/
 $(document).ready(function () {
-  $("#alternar-todo").on("click", function (e) {
-    $(".text-h").toggle("slow");
+  $(".alternar-respuesta").on("click", function (e) {
+    $(this).parent().next().toggle();
     e.preventDefault();
   });
 });
